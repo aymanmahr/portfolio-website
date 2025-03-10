@@ -1,0 +1,126 @@
+/* Reset default margins and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue-ish */
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky; /* Keeps nav at top when scrolling */
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#home {
+    background-color: #e6f3ff; /* Slightly different light blue */
+}
+
+#projects {
+    background-color: #fff; /* White for contrast */
+}
+
+/* Headings */
+h1 {
+    color: #003087; /* Dark blue */
+    font-size: 36px;
+}
+
+h2 {
+    color: #003087;
+    font-size: 28px;
+}
+
+h3 {
+    color: #444;
+    font-size: 22px;
+}
+
+/* Project Showcase */
+div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px; /* Limits project card width */
+    background-color: #f9f9f9;
+    border-radius: 5px; /* Rounded corners */
+}
+
+div a {
+    color: #0066cc; /* Blue links */
+    text-decoration: none;
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items on small screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    section {
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    div {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
